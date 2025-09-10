@@ -10,7 +10,7 @@
   --background: #030303;
   --primary: #76ad86;
   --secondary: #a7aeac;
-  --accent: #c2cfa1;
+  --accent: #77875b;
 }
 
 :root {
@@ -26,11 +26,9 @@
 
 body {
   padding: 5px;
+  background-color: var(--background);
 }
 
-h1 {
-  font-weight: 1000;
-}
 header {
   display: flex;
   align-items: center;
@@ -42,7 +40,15 @@ header {
   top: 0px;
   background-color: var(--background);
   border-bottom: solid 2px var(--secondary);
+  background-color: var(--secondary);
+  margin: 0;
 }
+
+img {
+  height: 80px;
+  width: auto;
+}
+
 a {
   color: var(--primary);
   font-weight: bold;
@@ -60,6 +66,9 @@ a:hover {
   border: none;
   transition: all 500ms;
   font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 #theme-button:hover {
   transition: all 500ms;
@@ -69,6 +78,9 @@ a:hover {
 
 main {
   padding: 2rem 10rem;
+  background-color: var(--accent);
+  margin: 1rem 10rem;
+  border-radius: 30px;
 }
 main p {
   margin-top: 0.5rem;
@@ -78,6 +90,7 @@ footer {
   border-top: 1px solid var(--text);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: var(--secondary);
 }
 
 footer p {
@@ -87,12 +100,14 @@ footer p {
 section {
   margin-top: 1rem;
 }
+
 h1,
 h2,
 h3,
 h4 {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  font-weight: 1000;
 }
 
 aside {
@@ -117,6 +132,7 @@ nav {
 @media screen and (max-width: 900px) {
   main {
     padding: 2rem 5rem;
+    margin: 5rem;
   }
   header {
     flex-wrap: wrap;
@@ -131,5 +147,6 @@ nav {
 @media screen and (max-width: 640px) {
   main {
     padding: 2rem 2rem;
+    margin: 2rem;
   }
 }
