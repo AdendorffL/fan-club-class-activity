@@ -84,6 +84,12 @@ footer p {
 }
 /* 640 */
 
+aside {
+  background-color: var(--accent);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+}
 @media screen and (max-width: 900px) {
   main {
     padding: 2rem 5rem;
