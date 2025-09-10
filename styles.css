@@ -37,6 +37,10 @@ header {
   gap: 1rem;
   justify-content: space-between;
   padding: 0rem 1rem;
+  padding-bottom: 2rem;
+  position: sticky;
+  top: 0px;
+  background-color: var(--background);
 }
 a {
   color: var(--primary);
@@ -69,6 +73,15 @@ main p {
   margin-top: 0.5rem;
 }
 
+footer {
+  border-top: 1px solid var(--text);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  text-align: center;
+}
 /* 640 */
 
 @media screen and (max-width: 900px) {
