@@ -29,6 +29,10 @@ body {
 }
 
 h1 {
-  font-family: "Eurostile", sans-serif;
   font-weight: 1000;
+}
+
+h3 {
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
