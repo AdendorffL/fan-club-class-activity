@@ -10,7 +10,7 @@
   --background: #030303;
   --primary: #76ad86;
   --secondary: #a7aeac;
-  --accent: #515e31;
+  --accent: #c2cfa1;
 }
 
 :root {
@@ -31,8 +31,54 @@ body {
 h1 {
   font-weight: 1000;
 }
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+a {
+  color: var(--primary);
+  font-weight: bold;
+}
+a:hover {
+  transition: all 500ms;
+  color: var(--accent);
+  cursor: pointer;
+}
 
-h3 {
-  padding-top: 5px;
-  padding-bottom: 2px;
+#theme-button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  transition: all 500ms;
+  font-weight: 700;
+}
+#theme-button:hover {
+  transition: all 500ms;
+  box-shadow: 0px 1px 20px var(--accent);
+  background-color: var(--accent);
+}
+
+main {
+  padding: 2rem 10rem;
+}
+main p {
+  margin-top: 0.5rem;
+}
+
+/* 640 */
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    padding: 2rem 2rem;
+  }
 }
