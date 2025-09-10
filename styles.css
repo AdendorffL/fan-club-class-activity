@@ -82,6 +82,17 @@ footer {
 footer p {
   text-align: center;
 }
+
+section {
+  margin-top: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
 /* 640 */
 
 aside {
