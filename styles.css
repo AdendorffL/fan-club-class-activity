@@ -2,15 +2,15 @@
   --text: #0f100b;
   --background: #fcfcfc;
   --primary: #528a63;
-  --secondary: #525856;
-  --accent: #c2cfa1;
+  --secondary: #313333;
+  --accent: #b2cb73;
 }
 :root[data-theme="dark"] {
   --text: #f4f5f0;
   --background: #030303;
   --primary: #76ad86;
-  --secondary: #a7aeac;
-  --accent: #77875b;
+  --secondary: #313333;
+  --accent: #5f8026;
 }
 
 :root {
@@ -25,8 +25,9 @@
 }
 
 body {
-  padding: 5px;
+  /* padding: 5px; */
   background-color: var(--background);
+  font-size: 20px;
 }
 
 header {
@@ -34,13 +35,11 @@ header {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  padding: 0rem 1rem;
-  padding-bottom: 2rem;
+  align-items: center;
+  padding: 1rem;
   position: sticky;
   top: 0px;
-  background-color: var(--background);
   border-bottom: solid 2px var(--secondary);
-  background-color: var(--secondary);
   margin: 0;
 }
 
@@ -52,13 +51,13 @@ img {
 a {
   color: var(--primary);
   font-weight: bold;
+  transition: all 400ms;
 }
 a:hover {
   transition: all 500ms;
-  color: var(--accent);
+  color: var(--text);
   cursor: pointer;
 }
-
 #theme-button {
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -72,7 +71,7 @@ a:hover {
 }
 #theme-button:hover {
   transition: all 500ms;
-  box-shadow: 0px 1px 20px var(--accent);
+  box-shadow: 0px 5px 20px var(--accent);
   background-color: var(--accent);
 }
 
@@ -118,7 +117,6 @@ aside {
 }
 
 nav a {
-  color: var(--text);
   text-decoration: none;
   font-size: 20px;
 }
@@ -127,6 +125,32 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+:root[data-theme="dark"] .secondary {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+:root[data-theme="light"] .secondary {
+  background-color: var(--secondary);
+  color: var(--background);
+}
+
+:root[data-theme="light"] .secondary a {
+  color: var(--background);
+}
+:root[data-theme="dark"] .secondary a {
+  color: var(--text);
+}
+
+:root[data-theme="light"] .secondary a:hover {
+  color: var(--primary);
+  transition: all 500ms;
+}
+:root[data-theme="dark"] .secondary a:hover {
+  color: var(--primary);
+  transition: all 500ms;
 }
 
 @media screen and (max-width: 900px) {
