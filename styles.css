@@ -174,3 +174,24 @@ nav {
     margin: 2rem;
   }
 }
+
+.character {
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.details {
+  border-left: 2px solid var(--secondary);
+  padding-left: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
