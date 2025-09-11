@@ -192,6 +192,13 @@ nav {
   padding-left: 1rem;
 }
 
+.character img {
+  height: 100px;
+  width: auto;
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+}
+
 ul {
   list-style-type: none;
 }
